@@ -1,0 +1,13 @@
+### Maia
+
+7.7 JS
+2.5 WASM
+1.7 C (loop)
+1.1 C (movs)
+
+### Kelvin
+
+7.8 JS
+2.6 WASM JS
+
+Wasmer

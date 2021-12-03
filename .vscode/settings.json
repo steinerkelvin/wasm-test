@@ -1,0 +1,13 @@
+{
+    "deno.enable": true,
+    "deno.lint": true,
+    "deno.unstable": true,
+    "deno.config": "deno.json",
+    "cSpell.words": [
+        "cranelift",
+        "Wasmer"
+    ],
+    "cSpell.ignoreWords": [
+        "movs"
+    ],
+}
