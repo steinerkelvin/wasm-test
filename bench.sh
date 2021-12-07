@@ -12,23 +12,14 @@ NAME=loop_loop
     clang -O3 $NAME.c -o $NAME.out
 )
 
-cargo build
+printf "c: "
+./other/$NAME.out
 
-(
-    cd other || exit
+printf "js: "
+deno run -A ./other/$NAME.ts
 
-    printf "c: "
-    ./$NAME.out
-
-    printf "js: "
-    deno run -A ./$NAME.ts
-
-    printf "wasm-js: "
-    deno run -A ./$NAME.wasm.ts
-
-)
-
-cargo build
+printf "wasm-js: "
+deno run -A ./other/$NAME.wasm.ts
 
 printf "wasmer-singlepass: "
 WASMER_COMPILER=singlepass cargo run --quiet ./wasm/$NAME.wat
