@@ -1,0 +1,13 @@
+### loop
+
+#### Mac Air M1 Kelvin
+
+36.6 WASM JS
+10.5 Wasmer Cranelift
+ 8.0 JS
+ 5.3 Wasmer LLVM
+ 1.4 C
+
+###  movs
+
+2.6 WASM JS movs
