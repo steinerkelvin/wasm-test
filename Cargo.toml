@@ -12,3 +12,6 @@ wasmer-engine-universal = "2.1.0"
 wasmer-compiler-singlepass = "2.1.0"
 wasmer-compiler-cranelift = "2.1.0"
 wasmer-compiler-llvm = "2.1.0"
+
+[profile.dev]
+opt-level = 3

@@ -12,14 +12,20 @@ NAME=loop_loop
     clang -O3 $NAME.c -o $NAME.out
 )
 
+cargo build
+
 (
     cd other || exit
 
     printf "c: "
     ./$NAME.out
 
-    printf "wasm-js: "
+    printf "js: "
     deno run -A ./$NAME.ts
+
+    printf "wasm-js: "
+    deno run -A ./$NAME.wasm.ts
+
 )
 
 cargo build

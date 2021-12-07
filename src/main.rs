@@ -66,6 +66,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 
   let mut features = Features::new();
   features.threads(true);
+  features.multi_value(false);
   let features = features;
 
   let engine = Universal::new(compiler).features(features).engine();
